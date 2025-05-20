@@ -25,13 +25,29 @@ function addition(num1, num2) {
  function checkIfCanDrive (name, age){
     let message;
     if (age>=18) {
-       message = name + "is old enough to drive"        
+       message = name + " is old enough to drive"        
     } else {
         message = name + " is not old enough to drive"
     }
     return message
  }
 
+ //largest number
+
+ function largestNumber(num1, num2, num3) {
+    let largestNumber;
+    if (num1>num2 && num1 >num3) {
+
+        largestNumber =num1;
+    }else if(num2>num1&&num2>num3){
+        largestNumber = num2;
+    }else if (num3>num1&&num3>num2){
+        largestNumber =num3;
+    }
+    return num3
+    
+    
+ }
  
 
  
