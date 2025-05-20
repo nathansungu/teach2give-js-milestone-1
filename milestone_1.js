@@ -18,7 +18,21 @@ function addition(num1, num2) {
     let perimeter = 2(length*width);
     return perimeter;
  }
-
  //check negative
  const isNegative =(number)=> (number<1? true: false)
+
+ //Check if allowed to drive
+ function checkIfCanDrive (name, age){
+    let message;
+    if (age>=18) {
+       message = name + "is old enough to drive"        
+    } else {
+        message = name + " is not old enough to drive"
+    }
+    return message
+ }
+
+ 
+
+ 
 
