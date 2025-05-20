@@ -18,7 +18,7 @@ function findPerimeter(length, width) {
   return perimeter;
 }
 //check negative
-const isNegative = (number) => (number < 1 ? true : false);
+const isNegative = (number) => (number < 0 ? true : false);
 
 //Check if allowed to drive
 function checkIfCanDrive(name, age) {
@@ -41,13 +41,31 @@ function largestNumber(num1, num2, num3) {
     largestNumber = num2;
   } else if (num3 > num1 && num3 > num2) {
     largestNumber = num3;
+  }else{
+    largestNumber= "all are equal"
   }
-  return num3;
+  return largestNumber;
 }
 
 //bmi calculator
 const calculateBMI = (weight, height) =>{
     let BMI = weight/(height*height)
+    let category;
+
+    if (BMI<18.5) {
+         category = "Underweight"
+    } else if (BMI<24.9) {
+            category = "Normal weight "  
+    }else if (BMI<29.9) {
+        category = "Overweight"        
+    }else{
+        category = "Obese"
+    }
+    let message = `Your BMI is ${BMI} - ${category}`
     
 }
+
+//
+
+
 
