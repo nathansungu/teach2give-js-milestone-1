@@ -170,10 +170,7 @@ const sumMultiples =(n, divisor) =>{
 //sum of digits
 function sumDigits(num) {
     let sum =0;
-    if(num ==0) {
-        return 0
-        
-    } 
+    
     while (num) {
         
         let last =num% 10;
@@ -184,4 +181,4 @@ function sumDigits(num) {
     }  
     return sum    
 }
-console.log(sumDigits(1278))
+console.log(sumDigits(0))
