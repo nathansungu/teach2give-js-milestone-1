@@ -31,9 +31,8 @@ function checkIfCanDrive(name, age) {
   }
   return message;
 }
-console.log(checkIfCanDrive("lucy", 10));
-//largest number
 
+//largest number
 function largestNumber(num1, num2, num3) {
   let largestNumber;
   if (num1 > num2 && num1 > num3) {
@@ -113,7 +112,6 @@ function perimeter(shape,num ) {
     }else {
         shapePerimeter ="invalid shape"
     }
-
     
 }
 
@@ -176,14 +174,14 @@ function sumDigits(num) {
         return 0
         
     } 
-    while (num !=0) {
+    while (num) {
         
         let last =num% 10;
         sum += last;
         
         num =Math.floor(num/10);
-        return sum
-    }     
- 
-    
+        
+    }  
+    return sum    
 }
+console.log(sumDigits(1278))
