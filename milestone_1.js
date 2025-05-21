@@ -2,7 +2,7 @@
 function addition(num1, num2) {
   let sum = num1 + num2;
 
-  console.log(sum);
+  return sum
 }
 
 //convert minutes into seconds
@@ -11,6 +11,7 @@ function convert(minutes) {
   let seconds = 60 * minutes;
   return seconds;
 }
+
 //perimeter of a rectangle
 
 function findPerimeter(length, width) {
@@ -133,7 +134,6 @@ function sumEvenNumbers(n) {
 }
 
 //Multiply by itself
-
 function poweUp(num, times) {
     if (times = false) {
         
@@ -183,8 +183,7 @@ function sumDigits(num) {
         
         num =Math.floor(num/10);
         return sum
-    }
-        
+    }     
  
     
 }
