@@ -157,3 +157,14 @@ function factorial(n) {
     
     
 }
+
+//multiple sum
+const sumMultiples =(n, divisor) =>{
+    let sum =0;
+    for(let i=1; i<=n; i++){
+        if(i%divisor==0){
+            sum = sum+i;
+        }
+    }
+    return sum
+}
