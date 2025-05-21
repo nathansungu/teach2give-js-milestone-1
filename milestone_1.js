@@ -100,3 +100,18 @@ const fizzBuzzCheck = (number)=>{
     }
     return fizzresut
 }
+
+//perimeter 2
+function perimeter(shape,num ) {
+    let shapePerimeter;
+    if (shape==="s") {
+        shapePerimeter = num*4;     
+    } else if (shape ==="c") {
+        shapePerimeter = (22/7)*(num*2)
+        
+    }else {
+        shapePerimeter ="invalid shape"
+    }
+
+    
+}
