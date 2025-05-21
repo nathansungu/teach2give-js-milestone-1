@@ -62,6 +62,7 @@ const calculateBMI = (weight, height) => {
     category = "Obese";
   }
   let message = `Your BMI is ${BMI} - ${category}`;
+  return message
 };
 
 //greeting based on time
@@ -107,7 +108,7 @@ function perimeter(shape,num ) {
     if (shape==="s") {
         shapePerimeter = num*4;     
     } else if (shape ==="c") {
-        shapePerimeter = (22/7)*(num*2)
+        shapePerimeter = (6.24)*num
         
     }else {
         shapePerimeter ="invalid shape"
@@ -130,6 +131,7 @@ function sumEvenNumbers(n) {
     return sum
     
 }
+
 
 //Multiply by itself
 function poweUp(num, times) {
@@ -181,4 +183,3 @@ function sumDigits(num) {
     }  
     return sum    
 }
-console.log(sumDigits(0))
