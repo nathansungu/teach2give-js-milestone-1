@@ -24,13 +24,13 @@ const isNegative = (number) => (number < 0 ? true : false);
 function checkIfCanDrive(name, age) {
   let message;
   if (age >= 18) {
-    message = name + " is old enough to drive";
+    message = `${name} + is old enough to drive`;
   } else {
-    message = name + " is not old enough to drive";
+    message = `${name} + is not old enough to drive`;
   }
   return message;
 }
-
+console.log(checkIfCanDrive("lucy", 10));
 //largest number
 
 function largestNumber(num1, num2, num3) {
@@ -41,31 +41,43 @@ function largestNumber(num1, num2, num3) {
     largestNumber = num2;
   } else if (num3 > num1 && num3 > num2) {
     largestNumber = num3;
-  }else{
-    largestNumber= "all are equal"
+  } else {
+    largestNumber = "all are equal";
   }
   return largestNumber;
 }
 
 //bmi calculator
-const calculateBMI = (weight, height) =>{
-    let BMI = weight/(height*height)
-    let category;
+const calculateBMI = (weight, height) => {
+  let BMI = weight / (height * height);
+  let category;
 
-    if (BMI<18.5) {
-         category = "Underweight"
-    } else if (BMI<24.9) {
-            category = "Normal weight "  
-    }else if (BMI<29.9) {
-        category = "Overweight"        
-    }else{
-        category = "Obese"
-    }
-    let message = `Your BMI is ${BMI} - ${category}`
-    
+  if (BMI < 18.5) {
+    category = "Underweight";
+  } else if (BMI < 24.9) {
+    category = "Normal weight ";
+  } else if (BMI < 29.9) {
+    category = "Overweight";
+  } else {
+    category = "Obese";
+  }
+  let message = `Your BMI is ${BMI} - ${category}`;
+};
+
+//greeting based on time
+function greetuser(name, hour) {
+  let time;
+  let greeting;
+
+  if (hour >= 5 && hour <= 11) {
+    time = "morning";
+  } else if (hour >= 12 && hour <= 17) {
+    time = "afternoon";
+  } else if (hour >= 18 && hour <= 21) {
+    time = "evening";
+  } else {
+    time = "night";
+  }
+  greeting = `Good ${time}, ${name}!`;
+  return greeting;
 }
-
-//
-
-
-
