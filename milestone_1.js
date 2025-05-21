@@ -168,3 +168,23 @@ const sumMultiples =(n, divisor) =>{
     }
     return sum
 }
+
+//sum of digits
+function sumDigits(num) {
+    let sum =0;
+    if(num ==0) {
+        return 0
+        
+    } 
+    while (num !=0) {
+        
+        let last =num% 10;
+        sum += last;
+        
+        num =Math.floor(num/10);
+        return sum
+    }
+        
+ 
+    
+}
