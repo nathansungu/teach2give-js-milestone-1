@@ -81,3 +81,22 @@ function greetuser(name, hour) {
   greeting = `Good ${time}, ${name}!`;
   return greeting;
 }
+
+//fizzbuzz
+const fizzBuzzCheck = (number)=>{
+    let modular3 = number% 3;
+    let modular5 = number% 5;
+    let fizzresut;
+
+    if (modular3 ===0 && modular5 ===0) {
+        
+        fizzresut = "FizzBuzz";
+    } else if(modular3 ===0){
+        fizzresut = "Fizz";
+    }else if(modular5 ===0){
+        fizzresut = "Buzz";
+    }else{
+        fizzresut = number;
+    }
+    return fizzresut
+}
