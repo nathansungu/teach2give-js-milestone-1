@@ -131,3 +131,15 @@ function sumEvenNumbers(n) {
     return sum
     
 }
+
+//Multiply by itself
+
+function poweUp(num, times) {
+    if (times = false) {
+        
+        times = 0;
+    }
+    let powedvalue = (num**times);
+    return powedvalue
+    
+}
