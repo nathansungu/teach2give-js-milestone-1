@@ -143,3 +143,17 @@ function poweUp(num, times) {
     return powedvalue
     
 }
+//factorial calculator
+function factorial(n) {
+    if (n<0) {
+        return "Enter positive values"    
+        
+    }else if (n===0) {
+        return 1
+        
+    }else{
+        return n*factorial(n-1)
+    }
+    
+    
+}
