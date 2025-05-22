@@ -105,7 +105,7 @@ const differenceEvenOdd = (array)=>{
     let evensum = 0;
     let oddsum = 0;
 
-    for(i =1; i<=array.length-1; i++){
+    for(let i =1; i<=array.length-1; i++){
         if(array[i]%2 ==0){
             evensum =+array[i];
         }else{
@@ -116,3 +116,15 @@ const differenceEvenOdd = (array)=>{
     return diffrence
 
 }
+
+//count truthy
+const countTruthy =(object)=>{
+    let count =0;
+    for (let key in object) {
+        if(object[key]){
+            count= count+1
+        }
+    }
+    return count
+}
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))
