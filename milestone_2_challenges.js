@@ -162,21 +162,23 @@ const reverseLinearSearch = (array, number) => {
 };
 console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 
-// const countOccurrences = (array) => {
+//count occurrences
+const countOccurrences = (array) => {
     
-//     let count = 0;
-//     for (let i = 1; i <= array.length - 1; i++) {
-//       //search
-//       if (array[0] == array[i]) {
-//         count +=1;
-//       }
-//       return array
+    const countobject = {};
+    for (const num of array){
+        if (countobject[num]){
 
-//     }
-//     return item +" "+ count
+            countobject[num] +=1 ;
+        }else{
+            countobject[num] =1;
+        } 
+        
+    }
+    return countobject
   
-// };
-// console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))
+};
+console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))
 
 //remove duplicates
 const removeDuplicates =(array) =>{
@@ -191,3 +193,14 @@ const removeDuplicates =(array) =>{
 
 }
 console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]))
+
+// //most frequent
+// const mostFrequent =(array)=>{
+//     let count =0;
+//     for (const item in array) {
+//         if () {
+            
+            
+//         }
+//     }
+// }
