@@ -180,7 +180,8 @@ function sumDigits(num) {
         sum += last;
         
         num =Math.floor(num/10);
-        
-    }  
-    return sum    
+        return sum
+    }       
+ 
+    
 }
