@@ -60,6 +60,7 @@ console.log(
 );
 
 //count properties
+
 const countProperties = (object) => {
   let count = 0;
 
@@ -71,3 +72,19 @@ const countProperties = (object) => {
   return count;
 };
 console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+
+//filter by length
+
+const filterByLength =(array, minLength)=>{
+
+    let newArray =[];
+    for(let i=0; i<=array.length-1; i++){
+        if (array[i].length<=minLength) {
+            newArray.push(array[i])            
+        }
+        
+    }
+    return newArray
+
+}
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5))
