@@ -94,7 +94,7 @@ const sumEvenNumbers =(array)=>{
     let sum =0;
     for(let i=0; i<array.length; i++){
         if(array[i]%2 ==0){
-            sum = sum+array[i]
+            sum =+array[i]
         }
     }
     return sum
@@ -128,3 +128,16 @@ const countTruthy =(object)=>{
     return count
 }
 console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))
+
+//average of numbers
+
+const average =(array) =>{
+    let sum = 0;
+    for( let i=0; i<array.length; i++){
+        sum=+array[i]        
+    }
+    let average = sum/array.length;
+    return average;
+}
+
+console.log(average([2, 4, 6, 8]))
