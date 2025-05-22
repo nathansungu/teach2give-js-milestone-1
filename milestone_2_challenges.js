@@ -99,3 +99,20 @@ const sumEvenNumbers =(array)=>{
     }
     return sum
 }
+
+//diffrence between even and odd numbers
+const differenceEvenOdd = (array)=>{
+    let evensum = 0;
+    let oddsum = 0;
+
+    for(i =1; i<=array.length-1; i++){
+        if(array[i]%2 ==0){
+            evensum =+array[i];
+        }else{
+            oddsum =+array[i];
+        }
+    }
+    let diffrence =evensum-oddsum;
+    return diffrence
+
+}
