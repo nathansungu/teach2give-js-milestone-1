@@ -164,43 +164,56 @@ console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
 
 //count occurrences
 const countOccurrences = (array) => {
-    
-    const countobject = {};
-    for (const num of array){
-        if (countobject[num]){
+  const countobject = {};
 
-            countobject[num] +=1 ;
-        }else{
-            countobject[num] =1;
-        } 
-        
+  for(let i = 0; i < array.length; i++){
+    let item =array[i];
+    if (countobject[item]) {
+      countobject[item] += 1;
+    } else {
+      countobject[item] = 1;
     }
-    return countobject
-  
+  }
+  return countobject;
 };
-console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))
+console.log(
+  countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"])
+);
 
 //remove duplicates
-const removeDuplicates =(array) =>{
-    const noDuplicate =[];
-    for (let i = 0; i < array.length; i++) {
-        if(!noDuplicate.includes(array[i]) ){
-            noDuplicate.push(array[i]);
-        }      
-        
+const removeDuplicates = (array) => {
+  const noDuplicate = [];
+  for (let i = 0; i < array.length; i++) {
+    if (!noDuplicate.includes(array[i])) {
+      noDuplicate.push(array[i]);
     }
-    return noDuplicate
+  }
+  return noDuplicate;
+};
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
 
-}
-console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]))
+//most frequent
+const mostFrequent = (array) => {
 
-// //most frequent
-// const mostFrequent =(array)=>{
-//     let count =0;
-//     for (const item in array) {
-//         if () {
-            
-            
-//         }
-//     }
-// }
+  let maxcount = 0;
+  let mostFrequent =[];
+  
+
+  for (let i = 0; i < array.length; i++) {
+    let count = 0;
+    
+    for (let j = 0; j < array.length; j++) {
+      if (array[i] == array[j]) {
+        count++;
+      }
+      if (count > maxcount) {
+        maxcount = count;
+        mostFrequent = array[i];
+      }
+    }
+  }
+  return mostFrequent;
+};
+console.log(
+  mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"])
+);
