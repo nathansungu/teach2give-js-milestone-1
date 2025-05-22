@@ -16,7 +16,7 @@ console.log(sumOfPositives([1, -4, 6]));
 //maximum value
 const findMax = (array) => {
   var maximum = array[0];
-  for (let i = 1; i < array.length - 1; i++) {
+  for (let i = 1; i <=array.length - 1; i++) {
     if (array[i] > maximum) {
       maximum = array[i];
     }
@@ -29,7 +29,7 @@ console.log(findMax([10, 7, 2, 9, 5]));
 const findWinner = (object) => {
   let winner = object[0];
 
-  for (let i = 1; i < object.length - 1; i++) {
+  for (let i = 1; i <= object.length - 1; i++) {
     if (object[i].votes > winner.votes) {
       winner = object[i];
     }
@@ -39,6 +39,20 @@ const findWinner = (object) => {
 const candidates = [
   { name: "Alice", votes: 50 },
   { name: "Bob", votes: 75 },
-  { name: "Charlie", votes: 65 },
+  { name: "Charlie", votes: 95 },
 ];
 console.log(findWinner(candidates));
+
+//longest word
+
+const finLongestWord =(array)=>{
+    let longest = array[0];
+    for (i=1; i<=array.length-1; i++){
+        if(array[i].length>longest.length){
+            longest =array[i]
+        }
+    }
+    return longest
+}
+
+console.log(finLongestWord(["apple", "banana", "pear", "grapefruit"]))
