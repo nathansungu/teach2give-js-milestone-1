@@ -55,4 +55,21 @@ const finLongestWord =(array)=>{
     return longest
 }
 
-console.log(finLongestWord(["apple", "banana", "pear", "grapefruit"]))
+console.log(finLongestWord(["apple", "banana", "grapefruil","pear", "grapefruit"]))
+
+//count properties
+const countProperties =(object)=>{
+    let count =0;
+    for(i=0; i<=object.length; i++){
+        for (key in object) {
+        if (object.hasOwnProperty(key)) {
+            count++           
+            
+        }
+    }
+    }
+    return count  
+
+
+}
+console.log(countProperties(["apple", "banana", "pear", "grapefruit"]))
