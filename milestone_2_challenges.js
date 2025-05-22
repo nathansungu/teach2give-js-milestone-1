@@ -140,7 +140,7 @@ console.log(average([2, 4, 6, 8]));
 
 //linear search
 const linearSearch = (array, number) => {
-//   let position = -1;
+  //   let position = -1;
   for (let i = 0; i <= array.length - 1; i++) {
     if (array[i] === number) {
       return i;
@@ -152,13 +152,42 @@ const linearSearch = (array, number) => {
 console.log(linearSearch([5, 3, 7, 1, 7], 7));
 
 //reverse linear search
-const reverseLinearSearch =(array, number)=>{
+const reverseLinearSearch = (array, number) => {
   for (let i = array.length - 1; i >= 0; i--) {
     if (array[i] === number) {
       return i;
     }
   }
   return -1;
+};
+console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
+
+// const countOccurrences = (array) => {
+    
+//     let count = 0;
+//     for (let i = 1; i <= array.length - 1; i++) {
+//       //search
+//       if (array[0] == array[i]) {
+//         count +=1;
+//       }
+//       return array
+
+//     }
+//     return item +" "+ count
+  
+// };
+// console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))
+
+//remove duplicates
+const removeDuplicates =(array) =>{
+    const noDuplicate =[];
+    for (let i = 0; i < array.length; i++) {
+        if(!noDuplicate.includes(array[i]) ){
+            noDuplicate.push(array[i]);
+        }      
+        
+    }
+    return noDuplicate
 
 }
-console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7))
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]))
