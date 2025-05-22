@@ -16,7 +16,7 @@ console.log(sumOfPositives([1, -4, 6]));
 //maximum value
 const findMax = (array) => {
   var maximum = array[0];
-  for (let i = 1; i <=array.length - 1; i++) {
+  for (let i = 1; i <= array.length - 1; i++) {
     if (array[i] > maximum) {
       maximum = array[i];
     }
@@ -45,31 +45,29 @@ console.log(findWinner(candidates));
 
 //longest word
 
-const finLongestWord =(array)=>{
-    let longest = array[0];
-    for (i=1; i<=array.length-1; i++){
-        if(array[i].length>longest.length){
-            longest =array[i]
-        }
+const finLongestWord = (array) => {
+  let longest = array[0];
+  for (i = 1; i <= array.length - 1; i++) {
+    if (array[i].length > longest.length) {
+      longest = array[i];
     }
-    return longest
-}
+  }
+  return longest;
+};
 
-console.log(finLongestWord(["apple", "banana", "grapefruil","pear", "grapefruit"]))
+console.log(
+  finLongestWord(["apple", "banana", "grapefruil", "pear", "grapefruit"])
+);
 
 //count properties
-const countProperties =(object)=>{
-    let count =0;
-    for(i=0; i<=object.length; i++){
-        for (key in object) {
-        if (object.hasOwnProperty(key)) {
-            count++           
-            
-        }
-    }
-    }
-    return count  
+const countProperties = (object) => {
+  let count = 0;
 
-
-}
-console.log(countProperties(["apple", "banana", "pear", "grapefruit"]))
+  for (key in object) {
+    if (object.hasOwnProperty(key)) {
+      count++;
+    }
+  }
+  return count;
+};
+console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
