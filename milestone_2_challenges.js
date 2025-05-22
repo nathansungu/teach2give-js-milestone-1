@@ -140,13 +140,25 @@ console.log(average([2, 4, 6, 8]));
 
 //linear search
 const linearSearch = (array, number) => {
-  let position = -1;
+//   let position = -1;
   for (let i = 0; i <= array.length - 1; i++) {
     if (array[i] === number) {
-      position = i;
+      return i;
     }
   }
-  return position;
+  return -1;
 };
 
-console.log(linearSearch([5, 3, 7, 1, 4], 10));
+console.log(linearSearch([5, 3, 7, 1, 7], 7));
+
+//reverse linear search
+const reverseLinearSearch =(array, number)=>{
+  for (let i = array.length - 1; i >= 0; i--) {
+    if (array[i] === number) {
+      return i;
+    }
+  }
+  return -1;
+
+}
+console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7))
