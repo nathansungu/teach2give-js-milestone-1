@@ -113,6 +113,7 @@ function perimeter(shape,num ) {
     }else {
         shapePerimeter ="invalid shape"
     }
+    return shapePerimeter
     
 }
 
